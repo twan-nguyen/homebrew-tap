@@ -1,6 +1,6 @@
 cask "twanotch" do
-  version "1.0.3"
-  sha256 "ca082c21f940cf77136dae64fa5832f6b76e90c6ca703c394237fe776754b45f"
+  version "1.0.4"
+  sha256 "5606f834d51105807cd8113dab8682056e7eaa48776c2bed1eb2b109ee7a37ad"
 
   url "https://github.com/twan-nguyen/twanotch/releases/download/v#{version}/TwaNotch-#{version}.zip"
   name "Twanotch"
