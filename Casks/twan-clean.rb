@@ -21,8 +21,8 @@ cask "twan-clean" do
     run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/TwanClean.app"]
   end
 
-  uninstall quit:      "com.twan.twanclean",
-            launchctl: "com.twan.twanclean.scheduler"
+  uninstall launchctl: "com.twan.twanclean.scheduler",
+            quit:      "com.twan.twanclean"
 
   zap trash: [
     "~/Library/Application Support/TwanClean",
