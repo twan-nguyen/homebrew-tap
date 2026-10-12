@@ -1,9 +1,9 @@
 cask "twanotch" do
-  version "1.0.2"
-  sha256 "9378c25b8547d31956b9f3c81d3e0974db3f592e5b0829cdcbf6a3bcd94071bc"
+  version "1.0.3"
+  sha256 "ca082c21f940cf77136dae64fa5832f6b76e90c6ca703c394237fe776754b45f"
 
   url "https://github.com/twan-nguyen/twanotch/releases/download/v#{version}/TwaNotch-#{version}.zip"
-  name "TwaNotch"
+  name "Twanotch"
   desc "Music, calendar, file shelf and HUD hub for the notch"
   homepage "https://github.com/twan-nguyen/twanotch"
 
