@@ -17,9 +17,8 @@ cask "twan-clean" do
   app "TwanClean.app"
 
   # Self-signed and not notarized: clear the download quarantine so Gatekeeper lets it open.
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/TwanClean.app"]
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/TwanClean.app"]
   end
 
   uninstall quit:      "com.twan.twanclean",
