@@ -1,10 +1,10 @@
 cask "hostsmith" do
-  version "2.0.0"
-  sha256 "376e8067a2b29f06ef03fd37deb74fcef0d64c393f834f71a2db19e1b483feb2"
+  version "2.1.0"
+  sha256 "2fc8ea1f1d4cb7af80d44031c563e1c225df5eca972e7014f15e81a9f55163ed"
 
   url "https://github.com/twan-nguyen/hostsmith/releases/download/v#{version}/HostSmith-#{version}.zip"
   name "HostSmith"
-  desc "Quản lý /etc/hosts và cổng đang dùng trên macOS"
+  desc "Switch /etc/hosts environments and see listening ports"
   homepage "https://github.com/twan-nguyen/hostsmith"
 
   livecheck do
@@ -12,7 +12,7 @@ cask "hostsmith" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :sequoia"
+  depends_on macos: :sequoia
 
   app "HostSmith.app"
 
